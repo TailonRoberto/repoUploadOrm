@@ -1,3 +1,5 @@
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+
 class Transaction {
   id: string;
 
