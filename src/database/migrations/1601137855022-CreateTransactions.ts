@@ -22,22 +22,19 @@ export class CreateTransactions1601137855022 implements MigrationInterface {
                            type: 'varchar',
                            isNullable: true
                        },
+
+                       {
+                        name: 'type',
+                        type: 'varchar',
+                        isNullable: true
+                        },
+
                         {
                            name: 'value',
-                           type: 'numeric',
-                           isNullable: true
-                       },
-                       {
-                           name: 'type',
-                           type: 'varchar',
-                           isNullable: true
-                       }
-                       ,
-                       {
-                        name: 'date',
-                        type: 'timestamp with time zone',
-                        isNullable: false,
-                    },                    
+                           type: 'decimal',
+                           precision: 10,
+                           scale: 2,
+                       },     
                     {
                         name: 'created_at',                    
                         type: 'timestamp',
